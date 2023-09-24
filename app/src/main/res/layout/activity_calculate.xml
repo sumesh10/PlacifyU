@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Calculate">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#C0F3F1">
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text="Calculate CGPA"
+                android:textColor="#08770C"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <!-- First CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="8dp">
+
+                <!-- Card content goes here -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semester 1"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="30dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Probability,Statistics and Computational Mathematics">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Data Structures Lab">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Data Communications and Computer Networks">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Data Structures using C">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="DBMS Lab">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Operating Systems with Linux as Case study">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Database Management Systems with SQL/PL-SQL">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Button
+                        android:id="@+id/sgpa1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="#08770C"
+                        android:layout_marginRight="30dp"
+                        android:onClick="sgpaSem1"
+                        android:text="SGPA"
+                        android:layout_marginBottom="10dp"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Second CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semester 2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="30dp" />
+
+
+                <!-- Card content goes here -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Operations Research">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Employability and Skill Development -1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Web Technology Lab">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Design and Analysis of Algorithms">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Java Programming">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Java Programming Lab">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Artificial Intelligence">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Advanced Software Engineering">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Button
+                        android:id="@+id/sgpa2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="#08770C"
+                        android:layout_marginRight="30dp"
+                        android:onClick="sgpaSem2"
+                        android:text="SGPA"
+                        android:layout_marginBottom="10dp"/>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!-- Third CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semester 3"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Business Management and Financial Accounting">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Theory of Computation and Compilers">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e32"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Data Mining">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e33"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Information Security">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e34"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Elective-I">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e35"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Data Analytics using Python">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Android">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e37"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Employability and Skill development -2">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e38"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Button
+                        android:id="@+id/sgpa3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="#08770C"
+                        android:layout_marginRight="30dp"
+                        android:onClick="sgpaSem3"
+                        android:text="SGPA"
+                        android:layout_marginBottom="10dp"/>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Fourth CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="8dp">
+
+                <!-- Card content goes here -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semester 4"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Parallel Programming using OpenMP">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e41"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Elective-II">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e42"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Seminar">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e43"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Comprehensive Viva-Voce">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e44"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeColor="#08770C"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        app:hintTextColor="#08770C"
+                        android:hint="Internship">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/e45"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/sgpa4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="#08770C"
+                        android:layout_marginRight="30dp"
+                        android:onClick="sgpaSem4"
+                        android:text="SGPA"
+                        android:layout_marginBottom="10dp"/>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Final CGPA:"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="30dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/cgpa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="#08770C"
+                        android:layout_marginRight="30dp"
+                        android:onClick="getCgpa"
+                        android:text="CGPA"
+                        android:layout_marginBottom="10dp"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
