@@ -43,15 +43,18 @@
             android:layout_marginRight="20dp"
             app:cardCornerRadius="35dp"
             android:elevation="30dp">
+
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@drawable/recruitment"/>
+                android:layout_height="wrap_content"
+                android:src="@drawable/recruitment"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="Recrutment Updates"
                 android:textColor="#08770C"
                 android:textAlignment="center"
@@ -70,21 +73,25 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="170dp"
                 android:layout_height="150dp"
+                android:onClick="onCgpa"
                 android:background="@drawable/recruitment"
                 app:cardCornerRadius="35dp">
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="105dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="20dp"
+
                     android:src="@drawable/cgpa"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Cgpa"
                     android:textColor="#08770C"
-                    android:textSize="20dp"
-                    android:fontFamily="@font/aclonica"
+                    android:textSize="25dp"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:textStyle="bold"
                     android:layout_marginTop="110dp"
                     android:textAlignment="center"/>
@@ -93,7 +100,23 @@
                 android:layout_width="170dp"
                 android:layout_height="150dp"
                 android:layout_marginLeft="10dp"
-                app:cardCornerRadius="35dp"/>
+                app:cardCornerRadius="35dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/examlogo"
+                    android:layout_marginBottom="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aptitude"
+                    android:textColor="#08770C"
+                    android:textSize="25dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textStyle="bold"
+                    android:layout_marginTop="110dp"
+                    android:textAlignment="center"/>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
     </LinearLayout>

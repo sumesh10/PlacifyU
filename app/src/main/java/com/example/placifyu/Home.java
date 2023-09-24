@@ -28,6 +28,11 @@ public class Home extends AppCompatActivity {
         i.putExtra("username",s);
         startActivity(i);
     }
+    public void onCgpa(View v){
+        Intent i=new Intent("cgpa");
+        startActivity(i);
+
+    }
     public void onLogout(View v){
         finish();
     }
