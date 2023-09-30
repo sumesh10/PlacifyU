@@ -28,33 +28,44 @@ public class MainActivity extends AppCompatActivity {
     public void login(View v){
         String a;
         try {
-            String uname,upassword;
-            uname=e1.getText().toString();
-            upassword=e2.getText().toString();
-            a= db.find(uname,upassword);
-            if(a.equals(uname)){
-                Toast.makeText(this, "Welcome "+uname, Toast.LENGTH_LONG).show();
-
-                Intent i=new Intent("home");
-                i.putExtra("username",e1.getText().toString());
+            String uname, upassword;
+            uname = e1.getText().toString();
+            upassword = e2.getText().toString();
+            if (uname.equals("Admin") && upassword.equals("admin123")) {
+                Intent i = new Intent("admin");
+                i.putExtra("username", e1.getText().toString());
                 startActivity(i);
+
                 e1.setText("");
                 e2.setText("");
+                finish();
+            } else {
+                a = db.find(uname, upassword);
+                if (a.equals(uname)) {
+                    Toast.makeText(this, "Welcome " + uname, Toast.LENGTH_LONG).show();
+
+                    Intent i = new Intent("home");
+                    i.putExtra("username", e1.getText().toString());
+                    startActivity(i);
+                    e1.setText("");
+                    e2.setText("");
+                    finish();
 
 
-            }
-            else if(a.equals("Incorrect password")){
-                Toast.makeText(this, "Incorrect password", Toast.LENGTH_SHORT).show();
-            }
-            else if(a.equals("User does not exist")){
-                Toast.makeText(this, "User does not exist", Toast.LENGTH_SHORT).show();
-            }
-            else {
-                Toast.makeText(this, "User does not exist", Toast.LENGTH_SHORT).show();
+                } else if (a.equals("Incorrect password")) {
+                    Toast.makeText(this, "Incorrect password", Toast.LENGTH_SHORT).show();
+                } else if (a.equals("User does not exist")) {
+                    Toast.makeText(this, "User does not exist", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, "User does not exist", Toast.LENGTH_SHORT).show();
+                }
             }
         }
-        catch (Exception e) {
-            System.out.println(e);
+
+         catch (Exception e) {
+                System.out.println(e);
         }
+
+
     }
 }
