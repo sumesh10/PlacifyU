@@ -25,6 +25,24 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".AptMessage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="msg" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Aptitude"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="Apt" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Register"
             android:exported="true">
             <intent-filter>

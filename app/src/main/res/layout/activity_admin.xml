@@ -93,21 +93,21 @@
                     android:layout_marginTop="110dp"
                     android:textAlignment="center"/>
             </androidx.cardview.widget.CardView>
-<!--            not completed coding submit complete code satyrday-->
             <androidx.cardview.widget.CardView
                 android:layout_width="170dp"
                 android:layout_height="150dp"
+                android:onClick="onLogout"
                 android:layout_marginLeft="10dp"
                 app:cardCornerRadius="35dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/examlogo"
+                    android:src="@drawable/log"
                     android:layout_marginBottom="20dp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Aptitude"
+                    android:text="Logout"
                     android:textColor="#08770C"
                     android:textSize="25dp"
                     android:fontFamily="sans-serif-smallcaps"

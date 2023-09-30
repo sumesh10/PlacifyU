@@ -21,7 +21,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="50dp"
             android:fontFamily="serif"
-            android:text="Add Company"
+            android:text="Aptitude Exam"
             android:textColor="#08770C"
             android:textSize="30dp"
             android:textStyle="bold" />
@@ -31,7 +31,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
             android:fontFamily="serif-monospace"
-            android:text="provide the following"
+            android:text="Enter the exam details"
             android:textColor="#08770C"
             android:textSize="16dp" />
         <com.google.android.material.textfield.TextInputLayout
@@ -80,7 +80,7 @@
             android:layout_marginRight="30dp"
             app:boxStrokeColor="#08770C"
             app:hintTextColor="#08770C"
-            android:hint="Exam time">
+            android:hint="Exam Link">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/e3"
@@ -103,19 +103,6 @@
             android:onClick="onSend"
             android:layout_height="wrap_content"
             android:text="Update" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="110dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:layout_weight="1"
-            android:outlineAmbientShadowColor="@color/black"
-            android:outlineSpotShadowColor="@color/black"
-            android:onClick="onBack"
-            app:srcCompat="@android:drawable/ic_menu_revert" />
 
 
     </LinearLayout>

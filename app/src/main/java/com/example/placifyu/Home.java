@@ -38,6 +38,10 @@ public class Home extends AppCompatActivity {
         Intent i=new Intent("recruit");
         startActivity(i);
     }
+    public void onApt(View v){
+        Intent i=new Intent("Apt");
+        startActivity(i);
+    }
     public void onLogout(View v){
         finish();
     }

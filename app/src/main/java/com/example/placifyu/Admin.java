@@ -33,6 +33,10 @@ public class Admin extends AppCompatActivity {
         startActivity(i);
 
     }
+    public void onCgpa(View v){
+        Intent i=new Intent("msg");
+        startActivity(i);
+    }
     public void onLogout(View v){
         finish();
     }
